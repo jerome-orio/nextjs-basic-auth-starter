@@ -61,6 +61,7 @@ npm run dev
 - Sensitive data (like social security numbers) can be encrypted using CryptoJS AES.
 - Rate limiting should be implemented to prevent brute force attacks.
 - HTTPS should be used in production to protect data in transit.
+- Use HTTP-Only Cookies: For storing JWTs securely, use HTTP-only cookies or secure cookies to mitigate XSS risks.
 - Session management and token-based authentication should be implemented for production use.
 - Additional security measures like password complexity requirements, 2FA, and security audits should be considered for a production-ready application.
 
@@ -70,6 +71,8 @@ npm run dev
 - Add password reset functionality.
 - Enhance the user interface and overall user experience.
 - Integrate with third-party authentication providers (e.g., Google, Facebook, GitHub).
+- Add Multi-Factor Authentication (MFA) for enhanced security.
+- Implement role-based access control (RBAC) for different levels of user permissions.
 
 ## License
 
