@@ -1,6 +1,6 @@
-# Next.js 15 Authentication App with Local Storage
+# Next.js 15 Authentication App with Local Storage and JWT Token-Based Sessions
 
-This is a Next.js 15 application that implements a basic user authentication system using local storage. It includes the ability to delete users from the dashboard.
+This is a Next.js 15 application that implements a basic user authentication system using local storage and JSON Web Token (JWT) sessions with JOSE. It includes the ability to delete users from the dashboard.
 
 ## Live Demo
 [Live Demo](https://nextjs-basic-auth-starter.vercel.app/)
@@ -11,7 +11,7 @@ This is a Next.js 15 application that implements a basic user authentication sys
 - **Language**: TypeScript
 - **State Management**: React Hooks
 - **CSS**: Tailwind CSS
-- **Authentication**: CryptoJS for password hashing
+- **Authentication**: CryptoJS for password hashing, JOSE for JWT sessions
 - **Storage**: Local Storage
 
 ## Features
@@ -21,6 +21,7 @@ This is a Next.js 15 application that implements a basic user authentication sys
 - Protected dashboard showing a list of all registered users
 - User deletion from the dashboard
 - Password hashing using CryptoJS SHA256
+- Secure session management with JWT tokens and JOSE
 - Secure storage of user data in local storage
 
 ## Setup
