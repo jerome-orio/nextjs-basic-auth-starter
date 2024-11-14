@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js 15 Authentication App with Local Storage
 
-## Getting Started
+This is a Next.js 15 application that implements a basic user authentication system using local storage. It includes the ability to delete users from the dashboard.
 
-First, run the development server:
+## Tech Stack
+
+- **Framework**: Next.js 15
+- **Language**: TypeScript
+- **State Management**: React Hooks
+- **CSS**: Tailwind CSS
+- **Authentication**: CryptoJS for password hashing
+- **Storage**: Local Storage
+
+## Features
+
+- User registration with name, email, and password
+- User login with email and password
+- Protected dashboard showing a list of all registered users
+- User deletion from the dashboard
+- Password hashing using CryptoJS SHA256
+- Secure storage of user data in local storage
+
+## Setup
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/jerome-orio/nextjs-basic-auth-starter.git
+```
+
+2. Install dependencies:
+
+```bash
+cd nextjs-basic-auth-starter
+npm install
+```
+
+3. Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open the app in your browser at `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Usage
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Visit the landing page and click on the "Login" or "Signup" links.
+2. Fill out the form and submit to register or log in.
+3. Upon successful login, you'll be redirected to the protected dashboard, which displays the list of registered users.
+4. To delete a user, click the "Delete" button next to the user you want to remove.
+5. To log out, click the "Logout" button in the dashboard.
 
-## Learn More
+## Security Considerations
 
-To learn more about Next.js, take a look at the following resources:
+- Passwords are hashed using CryptoJS SHA256 with a unique salt per user for added security.
+- Sensitive data (like social security numbers) can be encrypted using CryptoJS AES.
+- Rate limiting should be implemented to prevent brute force attacks.
+- HTTPS should be used in production to protect data in transit.
+- Session management and token-based authentication should be implemented for production use.
+- Additional security measures like password complexity requirements, 2FA, and security audits should be considered for a production-ready application.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Future Improvements
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Implement server-side storage (e.g., database, Redis) for user data instead of local storage.
+- Add password reset functionality.
+- Enhance the user interface and overall user experience.
+- Integrate with third-party authentication providers (e.g., Google, Facebook, GitHub).
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is licensed under the [MIT License](LICENSE).
