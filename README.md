@@ -2,6 +2,9 @@
 
 This is a Next.js 15 application that implements a basic user authentication system using local storage. It includes the ability to delete users from the dashboard.
 
+## Live Demo
+[Live Demo](https://nextjs-basic-auth-starter.vercel.app/)
+
 ## Tech Stack
 
 - **Framework**: Next.js 15
@@ -70,3 +73,8 @@ npm run dev
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
+
+## Contact Information
+Feel free to reach out for collaborations or inquiries:
+* Email: [jrorio.dev@zohomail.com](mailto:jrorio.dev@zohomail.com)
+* LinkedIn: [Jerome Orio](https://www.linkedin.com/in/jerome-orio-dev)
