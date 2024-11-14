@@ -27,6 +27,7 @@ const SignupForm = () => {
       localStorage.setItem('nextjs-basic-auth-current-user', JSON.stringify({ name, email, id }));
       redirect('/dashboard');
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [state]);
 
   return (

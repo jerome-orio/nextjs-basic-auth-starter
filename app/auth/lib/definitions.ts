@@ -10,3 +10,14 @@ export const signupSchema = z.object({
   email: z.string().trim().email({ message: "Invalid email address" }).max(200),
   password: z.string().trim().min(6, { message: "Must be at least 6 characters long" }),
 });
+
+export interface CurrentUser {
+  id: string;
+  name: string;
+  email: string;
+}
+
+export interface User extends CurrentUser {
+  password: string;
+  salt: string;
+}
